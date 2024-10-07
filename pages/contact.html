@@ -9,49 +9,155 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/Assit/index.css">
+    <!-- icon link -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link rel="stylesheet" href="/Assit/modal.js">
     <title>Document</title>
+    <style>
+        :root {
+            font-size: 20px;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        /* body {
+  font: 1em/1.618 Inter, sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  min-height: 100vh;
+  padding: 30px;
+  margin: 0;
+  
+  color: #224;
+  background:
+    url(https://source.unsplash.com/E8Ufcyxz514/2400x1823)
+    center / cover no-repeat fixed; */
+
+
+        .card {
+            max-width: 300px;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            max-width: 500px;
+            height: 300px;
+            padding: 35px;
+
+            border: 1px solid rgba(255, 255, 255, .25);
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.45);
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+            backdrop-filter: blur(15px);
+        }
+
+        .card-footer {
+            font-size: 0.65em;
+            color: #446;
+        }
+
+    </style>
 </head>
 
 <body>
+    <nav class="navbar" style="background-color: black;">
+        <div class="container">
+            <a class="navbar-brand" href="#"><lord-icon src="https://cdn.lordicon.com/nlsfemdg.json" trigger="hover"
+                    colors="primary:#ffffff,secondary:#ebe6ef" style="width:50px;height:20px">
+                </lord-icon></a>
+            <a class="navbar-brand" href="#"><lord-icon src="https://cdn.lordicon.com/nnfbxwtf.json" trigger="hover"
+                    colors="primary:#ffffff,secondary:#ffffff,tertiary:#ffffff,quaternary:#ffffff,quinary:#ffffff"
+                    style="width:50px;height:20px">
+                </lord-icon></a>
+            <a class="navbar-brand" href="#"><lord-icon src="https://cdn.lordicon.com/ftgjzwjn.json" trigger="hover"
+                    colors="primary:#ffffff,secondary:#ebe6ef" style="width:50px;height:20px">
+                </lord-icon></a>
+            <a class="navbar-brand" href="#"><lord-icon src="https://cdn.lordicon.com/fjuachvi.json" trigger="hover"
+                    colors="primary:#ffffff,secondary:#ebe6ef" style="width:50px;height:20px">
+                </lord-icon></a>
+        </div>
+    </nav>
     <header>
-        <h1>StylishStrokes - The Art of Calligraphy</h1>
+        <h1>🎨 StylishStrokes - The Art of Calligraphy</h1>
     </header>
     <div>
 
     </div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg " style="background-color: black;">
         <div class="container-fluid">
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                        <a class="navs-link " aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="navs-link   dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About calligraphy
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/pages/learning resource.html">learning resources</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/pages/about.html">Categories</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Calligraphy</a>
+                        <a class="navs-link" href="#">Learning Resources</a>
+                    </li>
+                    <li class="navs-item">
+                        <a class="navs-link" href="#">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Learning Resources</a>
+                        <a class="navs-link active" href="/Pages/contact.html">Contact us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/Pages/contact.html">Contant us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="navs-link" href="#">About us</a>
                     </li>
                 </ul>
-
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </div>
     </nav>
-    <div>
+    <div class="container text-center">
         <h1>Contant us</h1>
         <p>At StylishStrokes, we are committed to helping you explore and master the art of calligraphy. Whether you
             have
@@ -65,10 +171,32 @@
             details
             provided. We are here to assist you in your journey toward becoming a skilled calligrapher!
         </p>
-        <a class="btn btn-primary" href="/Pages/feedback.html" role="button">Contact us</a>
-    </div>
+       
 
-    <a href="/index.html"></a>
+    </div>
+    <!-- model -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="card">
+                        <p>A glass-like card to demonstrate the <strong>Glassmorphism UI design</strong> trend.</p>
+                        <p class="card-footer">Created by Rahul C.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    >
+    
 </body>
 
 </html>
