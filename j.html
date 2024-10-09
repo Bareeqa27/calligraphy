@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?famiyl=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+        * {
+            margin: 10;
+            padding-right: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .main-pic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* background: #151515; */
+        }
+
+        .cardb {
+            position: relative;
+            width: 350px;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+            transition-delay: 0.5s;
+        }
+
+        .cardb:hover {
+            width: 600px;
+            transition-delay: 0.5s;
+        }
+
+        .cardb .circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cardb .circle::before {
+            content: "";
+            position: absolute;
+            top: 30;
+            left: 2;
+            right: 2;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: #f3efef;
+            border: 8px solid black;
+            filter: drop-shadow(0 0 10px black) drop-shadow(0 0 60px black);
+            transition: 0.5s, background 0.5s;
+            transition-delay: 0.75s, 1s;
+        }
+
+        .cardb:hover .circle::before {
+            transition-delay: 0.5s;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            background: goldenrod;
+        }
+
+        .cardb .circle .logo {
+            position: relative;
+            width: 250px;
+            transition: 0.5s;
+            transition-delay: 0.5s;
+        }
+
+        .cardb:hover .circle .logo {
+            transform: scale(0);
+            transition-delay: 0s;
+        }
+
+        .cardb .product_img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0) rotate(315deg);
+            height: 300px;
+            transition: 0.5s ease-in-out;
+        }
+
+        .cardb:hover .product_img {
+            transition-delay: 0.75s;
+            top: 25%;
+            left: 72%;
+            height: 500px;
+            transform: translate(-50%, -50%) scale(1) rotate(15deg);
+        }
+
+        .cardb .contentb {
+            position: absolute;
+            width: 50%;
+            left: 20%;
+            padding: 20px 20px 20px 20px;
+            opacity: 0;
+            transition: 0.5s;
+            visibility: hidden;
+        }
+
+        .cardb:hover .contentb {
+            transition-delay: 0.75s;
+            opacity: 1;
+            visibility: visible;
+            left: 20px;
+        }
+
+        .cardb .contentb h2 {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 2.5em;
+            line-height: 1em;
+        }
+
+        .cardb .contentb p {
+            color: #fff;
+        }
+
+        .cardb .contentb a {
+            position: relative;
+            color: #111;
+            background: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-pic">
+        <div class="cardb">
+            <div class="circle" style="--clr: #f40103">
+                <img src="ima//religion-40578_1280.png" class="logo">
+            </div>
+            <div class="contentb">
+                <h1> About Calligraphy </h1>
+                <p>Calligraphy is an ancient art form that has evolved over centuries. Here, we explore its origins and
+                    different styles:</p>
+                <a href="#">Explore More</a>
+            </div>
+            <img src="/ima/brush-2027123_1280.png" class="product_img">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
